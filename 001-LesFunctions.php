@@ -32,7 +32,7 @@ echo("Moyene est $m <br/>");
 function nombreSup10($tab)
 {
 $nbr=0;
-// for($i=0;$i<count($tab);$i++)
+// for($i=0;$i<sizeof($tab);$i++)
 // {
     // if($val >= 10)
     // $nbr++;
