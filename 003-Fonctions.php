@@ -65,4 +65,30 @@ $clients=array(
     }
     
     affichetabv2($clients);
+
+  //Question 3 
+    //==============================================
+    function replace_key(&$tab)
+    {
+       foreach($tab as $c=>$v)
+        {
+        $tab[$c]=array();
+        $cpt=1;
+        foreach( $v as $c1=>$v1)
+        {
+           if($cpt==1)
+                $tab[$c]["nom"]=$v1;
+                else if ($cpt==2)
+                $tab[$c]["ville"]=$v1;
+                else if ($cpt==3)
+                $tab[$c]["age"]=$v1;
+
+                $cpt++;
+        }
+    }
+ }
+
+    replace_key($clients);
+    
+    print_r($clients);
 ?>
