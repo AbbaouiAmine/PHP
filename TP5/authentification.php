@@ -10,6 +10,11 @@ if(isset($_POST["click"]))
     {
         header("location:espace.php?pseudo=".$_POST["pseudo"]);
     }
+    else
+    {
+    
+    echo("mot de pass incorrect");
+    }
 }
 
 ?>
