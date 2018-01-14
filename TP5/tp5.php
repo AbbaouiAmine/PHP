@@ -14,6 +14,13 @@
     ============Etape 3:
 
     $stm->execute();
+    ===================Vérification 
+    $stm->rowCount();
+    ===================Selection des données
+    $res=$stm->fetchALL(PDO::FETCH_ASSOC);
+    
+    ===============spplimentaire : redirection 
+    header("location:page.html");
 */
 
 
